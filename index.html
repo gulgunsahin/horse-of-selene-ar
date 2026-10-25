@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Horse of Selene — AR</title>
+  <style>
+    :root{
+      --bg:#f4ebdd;
+      --ink:#292622;
+      --muted:#7f776e;
+      --accent:#a65232;
+      --card:#fbf6ef;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--ink);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    }
+    main{
+      width:min(100%,430px);
+      min-height:100vh;
+      margin:0 auto;
+      padding:28px 22px 36px;
+    }
+    .eyebrow{
+      color:var(--accent);
+      font-size:12px;
+      font-weight:700;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-top:20px;
+    }
+    h1{
+      font-family:Georgia,"Times New Roman",serif;
+      font-size:39px;
+      line-height:1.02;
+      margin:8px 0 10px;
+      font-weight:600;
+    }
+    p{
+      color:var(--muted);
+      line-height:1.5;
+      font-size:15px;
+      margin:0 0 22px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:20px;
+      padding:14px;
+      margin:16px 0 22px;
+      box-shadow:0 1px 0 rgba(0,0,0,.05);
+    }
+    img{
+      display:block;
+      width:100%;
+      aspect-ratio:4/3;
+      object-fit:cover;
+      border-radius:14px;
+    }
+    .ar-link{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:54px;
+      border-radius:14px;
+      background:var(--accent);
+      color:white;
+      text-decoration:none;
+      font-weight:700;
+      font-size:16px;
+      margin-top:14px;
+    }
+    .note{
+      font-size:12px;
+      line-height:1.45;
+      color:var(--muted);
+      margin-top:16px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Experimental AR · Object O</div>
+  <h1>Horse of Selene</h1>
+  <p>Place the sculpture in your space and inspect it from different angles.</p>
+
+  <div class="card">
+    <a rel="ar" href="horse_of_selene.usdz">
+      <img src="horse_of_selene.jpg" alt="Horse of Selene">
+    </a>
+    <a class="ar-link" rel="ar" href="horse_of_selene.usdz">View in AR</a>
+  </div>
+
+  <div class="note">
+    Conceptual AR prototype for the Room 18 mobile guide.
+    The 3D model is used as an interaction demonstrator and is not presented as an archaeologically validated reconstruction.
+  </div>
+</main>
+</body>
+</html>
